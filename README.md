@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Kushagra Shukla 
-- 🚀 CSE 2nd Year at IET Lucknow.
+- 🚀 CSE 3rd Year at IET Lucknow.
 - 👀 I’m interested in coding and learning for a better tech oriented world 
 - 🌱 I’m currently learning ML and CP
 
