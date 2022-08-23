@@ -1,0 +1,380 @@
+
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+\usepackage{hyperref} 
+ \hypersetup{ 
+     colorlinks=true, 
+     linkcolor=blue, 
+     filecolor=blue, 
+     citecolor = black,       
+     urlcolor=cyan, 
+     } 
+
+% Set the margins
+\geometry{left=0.55cm, top=0.5cm, right=0.55cm, bottom=0.2cm}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{-3mm}{#1}:\hspace{1mm} & \hspace*{0pt}\hfill{\footnotesize{ #3}} \vspace{-0.5mm}\\ \hspace{-2.9mm}#2 
+    \end{tabular*}
+    \vspace{0mm}
+}
+
+\newcommand{\resumeExp}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1.2mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.1mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.5mm}
+}
+
+\newcommand{\resumeEdu}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.3mm} \small\textbf{#1} & \footnotesize{#3}\vspace{-1mm} \\
+        \hspace{-4.3mm} \footnotesize{#2} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-3.2mm}
+}
+
+\newcommand{\resumeAchieve}[3]
+{
+\hspace{-3.1mm}\textbf{ #1} & {#2} & \hspace{3mm}\footnotesize{#3}
+\vspace{0mm}\\
+}
+
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm,itemsep=-2.5mm]}
+
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-1.5mm}}
+
+\renewcommand{\arraystretch}{1}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+\newcommand{\name}{Kushagra Shukla} % Your Name
+\newcommand{\course}{B.Tech -Computer Science and Engineering} % Your Course
+\newcommand{\roll}{xxxxxxxx} % Your Roll No.
+\newcommand{\phone}{8545981270} % Your Phone Number
+\newcommand{\emaila}{1kuspia@gmail.com} %Email 1
+\newcommand{\github}{kuspia} %Github
+\newcommand{\website}{https://example.com} %Website
+\newcommand{\linkedin}{kuspia} %linkedin
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+
+%----------HEADING-----------------
+\begin{center}
+    \LARGE{\textbf{\name}}
+\end{center}
+\vspace{-4.5mm}
+
+\begin{center}
+    \small{\href{https://github.com/\github}{\faGithub \hspace{0.2mm} github} | \href{https://stackoverflow.com/users/13248217/kuspia?tab=profile}
+    {\faStackOverflow \hspace{0.2mm} stackoverflow} |  \href{https://www.linkedin.com/in/\linkedin/}{\faLinkedinSquare \hspace{0.2mm} linkedin} | \href{mailto:\emaila}{\faSend \hspace{0.2mm} \emaila} | 
+    \href{tel://+918545981270/} {\faPhone \hspace{0.2mm} +91-\phone} }
+\end{center}
+\vspace{-3mm}
+
+%-----------EDUCATION-----------------
+
+\vspace{-2.5mm}
+\section{Education}
+
+\resumeSubHeadingListStart
+\resumeEdu
+{Institute of Engineering and Technology, Lucknow} 
+{Bachelors of Technology in Computer Science and Engineering} 
+{Aug 2019 - May 2023} %Event Dates
+{CGPA: 9.00/10.0} %Website
+\resumeSubHeadingListEnd
+\vspace{-3.5mm}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeExp
+{IIT Bombay - Eyantra}
+{SDE Intern}
+{May 2021 - July 2021}
+{\href{https://drive.google.com/file/d/1xmdA0wkeH8H9o7_u9ryQl7A973RTPb5A/view?usp=sharing}{\faExternalLink}Certificate} %Website
+
+\resumeItemListStart
+\item[$\bullet$] Built a filtering pipeline to cluster the objects for 3D point clouds.
+\item[$\bullet$] Optimizing the benchmarks by building codes free from API and improved ML classifier accuracy.
+\resumeItemListEnd
+
+
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+
+%----------- open source contributions 
+\section{Open-source Contributions}
+\resumeSubHeadingListStart
+
+\resumeExp
+{igel}
+{Tool that let you train, test, and use models without writing codes}
+{Aug 2021}
+{\href{https://github.com/nidhaloff/igel/pull/96}{\faExternalLink}96} %Website
+
+\resumeItemListStart
+\item[$\bullet$] Extended the functionality by adding more CLI commands and introduced a shorthand flag for the help list.
+\resumeItemListEnd
+
+\resumeExp
+{deep-translator}
+{Python tool to translate between different languages using multiple
+translators.}
+{Aug 2021}
+{\href{https://github.com/nidhaloff/deep-translator/pull/92}{\faExternalLink}92  \href{https://github.com/nidhaloff/deep-translator/pull/95}{\faExternalLink}95 } %Website
+
+\resumeItemListStart
+\item[$\bullet$] Fixed multiple bugs in google translator and added more languages translation also extended the functionality to recognize languages with multiple names.
+\resumeItemListEnd
+
+
+Few other contributions: hello-world {\href{https://github.com/leachim6/hello-world/pull/1137}{\faExternalLink}1137}, Automation-scripts {\href{https://github.com/python-geeks/Automation-scripts/pull/584}{\faExternalLink}584} {\href{https://github.com/python-geeks/Automation-scripts/pull/558}{\faExternalLink}558} 
+{\href{https://github.com/python-geeks/Automation-scripts/pull/416}{\faExternalLink}416}
+\\
+\resumeSubHeadingListEnd
+\vspace{-9mm}
+
+
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProject
+{NFT Warranty System}
+{Flipkart Grid 4.0} 
+{May 2022 - Aug 2022} %Event Dates
+{\href{https://nft-warranty-app.herokuapp.com/}{\faExternalLink}live} 
+\resumeItemListStart
+\vspace{1mm}
+\item[$\bullet$] The d-app helps retailers or eCommerce platforms to generate decaying transferrable warranties via smart contract. 
+\item[$\bullet$] Warranty can be transferred via OTP authentication, product validation can be done from a serial number also purchase history of owners is maintained in the receipt.  
+\resumeItemListEnd
+
+\vspace{1mm}
+\resumeProject
+{Nirikshak Bot} %Project Name
+{Prof. Kavi Arya, IIT Bombay} %Project Name, Location Name
+{Oct 2020 - Mar 2021} %Event Dates
+{\href{https://drive.google.com/file/d/1umIr8gVzgmabdBLGw3RPyPheuPj0i4Kt/view?usp=sharing}{\faExternalLink}Certificate} %Website
+\resumeItemListStart
+\vspace{1mm}
+\item[$\bullet$] The goal of the theme was to deposit the balls to the right collection box according to their color by making them traverse inside a maze that was attached to a ball balancing platform, actuated by servo motors in a simulation app.
+\item[$\bullet$] Highly optimized algorithms and PID tunings were done for robust performance. {\href{https://www.youtube.com/watch?v=O6SMixLrB9E&ab_channel=K-ARTSmixFun}{\faExternalLink}Demo} 
+\resumeItemListEnd
+
+\vspace{1mm}
+
+
+\resumeProject
+{CC Validator} %Project Name
+{Scaler HackX} %Project Name, Location Name
+{Sep 2021 - Oct 2021} %Event Dates
+{\href{https://cc-validator.herokuapp.com/}{\faExternalLink}live} %Website
+\resumeItemListStart
+\vspace{1mm}
+
+\item[$\bullet$] A web tool to validate the cc number to avoid fraudulent activities and unnecessary penetrations.
+
+\resumeItemListEnd
+
+\vspace{1mm}
+
+
+\resumeProject
+{Other Projects}{}{}{}
+\vspace{-2.5mm}
+\resumeItemListStart
+
+
+\item[$\bullet$] \textbf{Fingame \raisebox{-0.3mm}{\href{https://play-fingame.herokuapp.com/}{\footnotesize\faExternalLink}} :} React application to educate young adults about financial planning and investing.
+
+
+\item[$\bullet$] \textbf{Estate Price Prediction \raisebox{-0.3mm}{\href{https://findhomeprice.herokuapp.com/}{\footnotesize\faExternalLink}} :} Price Predictor for homes in Banglore by training an ML model.
+
+
+
+\item[$\bullet$] \textbf{Webtap \raisebox{-0.3mm}{\href{https://github.com/kuspia/Chrome-Extensions/blob/main/Webtap/seethis.png}{\footnotesize\faExternalLink}} :} Chrome extension for quick launches of famous Websites.
+
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-4.5mm}
+
+\section{Achievements}
+\vspace{0.2mm}
+\small{\begin{tabular*}{\textwidth}[t]{p{0.22\textwidth} p{0.68\textwidth}@{\extracolsep{\fill}}r}
+
+
+
+
+
+
+\resumeAchieve{Gate CSE - 2022 }{Secured 9k rank among 100000$+$ participants and qualified for the examination {\href{https://drive.google.com/file/d/1LYaKFW8qe3Uae0_fadha5N0EH57myIxq/view}{\faExternalLink}} }{}
+
+
+
+\resumeAchieve{Software Course}{ Secured 1st position among 10000$+$ students in a course hosted by IIT-B {\href{https://drive.google.com/file/d/1xVXiVwiKt3nqReadtN_P0goYty2ugUil/view?usp=sharing}{\faExternalLink}}   }{}
+
+
+
+\resumeAchieve{Kickstart-A 2020}{ Secured 389th rank among large number of participants {\href{https://drive.google.com/file/d/1Cli0iGChr4kbkvWFXHWe83lSne_UtIoB/view?usp=sharing}{\faExternalLink}}    } {}
+
+\resumeAchieve{Kickstart-G 2021}{ Secured 946th rank among large number of participants   {\href{https://drive.google.com/file/d/1yJucGQrHo8wDd97b6ZGL6LfvPS7fBKDF/view?usp=sharing}{\faExternalLink}}    } {}
+
+
+\resumeAchieve{Hashcode 2022}{ Secured 964048 points among various teams  {\href{https://drive.google.com/file/d/19JDzC4a-HU8zcbK4St-TYU7BOFXXLtV6/view?usp=sharing}{\faExternalLink}} }{}
+
+
+\resumeAchieve{Snackdown'21}{ Selected among top 500 contestants for elimination round {\href{https://drive.google.com/file/d/1o05UXVqLFa-GvfX3GiHNxNx00NpLxKXp/view?usp=sharing}{\faExternalLink}} }{}
+
+\resumeAchieve{GFG Job-a-Thon}{ Secured 125th rank in Amazon alexa hiring challenge} {}
+
+
+
+
+\resumeAchieve{DSA Problems}{ Solved 1000$+$ problems on Leetcode, InterviewBit, Codechef, and Codeforces } {}
+
+
+
+\resumeAchieve{Guinness Record}{ Organized by Guvi for building the app for world record event {\href{https://www.guvi.in/certificate?id=1S16454Q817Zx9b3F8&getUri=true}{\faExternalLink}}    } {}
+
+
+
+\resumeAchieve{Algorithmic Toolbox}{Coursera certified in Algorithmic Toolbox {\href{https://coursera.org/share/191a36cfb8797b9b22b065ed99bfc85b}{\faExternalLink}} }{}
+
+
+
+
+
+
+\resumeAchieve{YouTube Channel} { Completed 1k subs. and 4k watch hours for monetization of my YouTube Channel
+{\href{https://www.youtube.com/c/KARTSmixFun}{\faExternalLink}}
+} {}
+
+\end{tabular*}}
+
+\vspace{-2.5mm}
+
+
+\section{Technical Skills}
+\vspace{0.2mm}
+
+\small{\begin{tabular*}{\textwidth}[t]{p{0.5\textwidth} p{0.5\textwidth}}
+
+\hspace{-3.1mm}{\textbf{ Languages:} C$++$, C, Python, Solidity} & {\textbf{WebD:} HTML, CSS, JS, MongoDB, NodeJS} \\  
+
+
+\hspace{-3.1mm} {\textbf{Miscellaneous:} MySQL, Git, Linux, OOPs}
+\end{tabular*}}
+
+\vspace{-2.5mm}
+
+
+
+% \section{Relevant Coursework}
+% \vspace{0.2mm}
+
+
+% \small{\begin{tabular*}{\textwidth}[t]{p{\textwidth}}
+% \hspace{-3.1mm}\textbf{ Computer Science: }{Deep Learning, Data Structures and Algorithms, Databases, Operating Systems, Computer Networks}\\
+% \hspace{-3.1mm}\textbf{ Mathematics: }{Optimization, Discrete Maths, Probability and Random Processes, Number Theory, Linear Algebra}
+% \end{tabular*}}
+
+% \vspace{-2.5mm}
+
+
+
+
+
+
+% \section{Positions of Responsibility}
+% \vspace{-0.4mm}
+
+% \resumeSubHeadingListStart
+% \resumePOR{\textbf{Title, Organization 1}} % Position
+% {Work done}{\raisebox{0.75pt}{2021 - 2022}}
+% \vspace{0.5mm}
+% \resumePOR{\textbf{Title, Organization 2}}
+% {Work done}
+% {\raisebox{0.75pt}{2018 - 2019}}
+% \vspace{-1mm}
+% \resumeSubHeadingListEnd
+% \hspace*{-2mm}\rule{1.030\textwidth}{0.1mm}
+% \vspace{0mm}
+
+%-------------------------------------------
+\end{document}
+
